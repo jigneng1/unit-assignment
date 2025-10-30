@@ -68,7 +68,7 @@ docker ps
 
 ---
 
-## 🔑 3. ตั้งค่า Environment Variables (optional)
+## 🔑 3. ตั้งค่า Environment Variables
 
 สร้างไฟล์ `.env` ภายในโฟลเดอร์ `backend`
 
