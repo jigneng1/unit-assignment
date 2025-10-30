@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลบริษัท</title>
+    <link rel="stylesheet" href="styles/profile.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">ข้อมูลบริษัท</h1>
+        
+        <div class="loading" id="loading">กำลังโหลดข้อมูล...</div>
+        <div class="error" id="error" style="display: none;"></div>
+        
+        <form class="form" id="companyForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="company">ชื่อ-สกุล/ชื่อบริษัท <span class="required">*</span></label>
+                    <input type="text" id="company" class="form-input">
+                </div>
+                
+                <div class="form-group">
+                    <label for="tax-id">เลขบัตรประชาชน/เลขที่ผู้เสียภาษี <span class="required">*</span></label>
+                    <input type="text" id="tax-id" class="form-input">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group small">
+                    <label for="address-no">ที่อยู่เลขที่<span class="required">*</span></label>
+                    <input type="text" id="address-no" class="form-input">
+                </div>
+                
+                <div class="form-group small">
+                    <label for="village">หมู่</label>
+                    <input type="text" id="village" class="form-input">
+                </div>
+                
+                <div class="form-group">
+                    <label for="village-name">หมู่บ้าน/อาคาร</label>
+                    <input type="text" id="village-name" class="form-input">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="lane">ซอย</label>
+                    <input type="text" id="lane" class="form-input">
+                </div>
+                
+                <div class="form-group">
+                    <label for="road">ถนน</label>
+                    <input type="text" id="road" class="form-input">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="subdistrict">ตำบล/แขวง <span class="required">*</span></label>
+                    <input type="text" id="subdistrict" class="form-input">
+                </div>
+                
+                <div class="form-group">
+                    <label for="district">อำเภอ/เขต <span class="required">*</span></label>
+                    <input type="text" id="district" class="form-input">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="province">จังหวัด <span class="required">*</span></label>
+                    <input type="text" id="province" class="form-input">
+                </div>
+                
+                <div class="form-group">
+                    <label for="postal">รหัสไปรษณีย์ <span class="required">*</span></label>
+                    <input type="text" id="postal" class="form-input">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="./js/profile.js"></script>
+</body>
+</html>

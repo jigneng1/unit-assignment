@@ -1,0 +1,65 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor/IDE
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.iml
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp.*
+.cache/
+dist/
+build/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+.env
+.venv/
+venv/
+env/
+pip-wheel-metadata/
+*.egg-info/
+.pytest_cache/
+
+# Java / JVM
+*.class
+*.jar
+*.war
+*.ear
+target/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*~
+.idea/
+coverage/
+coverage.xml
+
+# Environment / secrets
+.env.local
+.env.*.local
+
+# Misc
+.DS_Store
+Thumbs.db

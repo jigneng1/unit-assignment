@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/register.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>สมัครสมาชิก</h1>
+      <p>มองเห็นทุกการเคลื่อนไหว ธุรกิจไม่สะดุด</p>
+      <div class="inline-icon-text">
+        <svg
+          width="15"
+          height="15"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="12" cy="12" r="12" fill="green" />
+          <path
+            d="M6 12l4 4 8-8"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+
+        <p class="sub-text">ทดลองใช้งานฟรี 6 เดือน</p>
+      </div>
+      <hr />
+      <form class="register-form" id="registerForm">
+        <div style="margin-top: 20px;"">
+        <label for="username"
+          >บัญชีผู้ใช้ (Username)
+          <span style="font-weight: bold; color: red">*</span></label
+        >
+        <input type="text" id="username" name="username" />
+
+        <label for="password"
+          >รหัสผ่าน (Password)
+          <span style="font-weight: bold; color: red">*</span></label
+        >
+        <input type="password" id="password" name="password" />
+
+        <ul>
+          <li>มีตัวอักษรพิมพ์ใหญ่</li>
+          <li>มีตัวอักษรพิมพ์เล็ก</li>
+          <li>มีตัวเลข</li>
+          <li>ความยาวอย่างน้อย 8 ตัวอักษร</li>
+        </ul>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>ประเภท <span class="required">*</span></label>
+            <select required name="company_type" id="company_type">
+              <option disabled selected>--- เลือก ---</option>
+              <option value="company_type_1">ประเภท 1</option>
+              <option value="company_type_2">ประเภท 2</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row two-col">
+          <div class="form-group">
+            <label>ชื่อ-สกุล/ชื่อบริษัท<span class="required">*</span></label>
+            <input type="text" name="company_name" id="company_name" required />
+          </div>
+          <div class="form-group">
+            <div
+              style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px"
+            >
+              <div>
+                <label>ที่อยู่เลขที่<span class="required">*</span></label>
+                <input type="text" name="house_no" id="house_no" required />
+              </div>
+              <div>
+                <label>หมู่</label>
+                <input type="text" name="village_no" id="village_no"/>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row two-col">
+          <div class="form-group">
+            <label>หมู่บ้าน/อาคาร</label>
+            <input type="text" name="village_name" id="village_name" />
+          </div>
+          <div class="form-group">
+            <label>ซอย</label>
+            <input type="text" name="alley" id="alley" />
+          </div>
+        </div>
+
+        <div class="form-row two-col">
+          <div class="form-group">
+            <label>ถนน <span class="required">*</span></label>
+            <input type="text" name="road" id="road" required />
+          </div>
+          <div class="form-group">
+            <label>ตำบล/แขวง <span class="required">*</span></label>
+            <input type="text" name="sub_district" id="sub_district" required />
+          </div>
+        </div>
+
+        <div class="form-row two-col">
+          <div class="form-group">
+            <label>อำเภอ/เขต <span class="required">*</span></label>
+            <input type="text" name="district" id="district" required />
+          </div>
+          <div class="form-group">
+            <label>จังหวัด <span class="required">*</span></label>
+            <input type="text" name="province" id="province" required />
+          </div>
+        </div>
+
+        <div class="form-row two-col">
+          <div class="form-group">
+            <label>รหัสไปรษณีย์ <span class="required">*</span></label>
+            <input type="text" name="zipcode" id="zipcode" required maxlength="5" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>คำนำหน้าผู้ติดต่อ <span class="required">*</span></label>
+            <select required name="name_title" id="name_title">
+              <option disabled selected>--- เลือก ---</option>
+              <option value="นาย">นาย</option>
+              <option value="นางสาว">นางสาว</option>
+              <option value="นาง">นาง</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>ชื่อผู้ติดต่อ <span class="required">*</span></label>
+            <input type="text" name="contact_firstname" id="contact_firstname" required />
+          </div>
+          <div class="form-group">
+            <label>สกุลผู้ติดต่อ <span class="required">*</span></label>
+            <input type="text" name="contact_lastname" id="contact_lastname" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>เบอร์โทรศัพท์<span class="required">*</span></label>
+            <input type="text" name="phone" id="contact_phone" required disabled />
+          </div>
+          <div class="form-group">
+            <label>อีเมล<span class="required">*</span></label>
+            <input type="text" name="email" id="contact_email" required disabled />
+          </div>
+          <div class="form-group">
+            <label>ไอดีแนะนำ (REF)</label>
+            <input type="text" name="ref_code" id="ref_code" />
+          </div>
+        </div>
+        <button type="submit">สมัครสมาชิก</button>
+      </form>
+    </div>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+
+    <script src="./js/register.js"></script>
+  </body>
+</html>
